@@ -1,0 +1,656 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 35px;
+}
+
+body{
+    background-color: #fcf9d4;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 0 30px;
+}
+
+
+/* nav section */
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: #d1cfba;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+nav .icons, .navMob, .navMobIcons{
+    display: none;
+}
+
+nav h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav .navWeb{
+    display: flex;
+    gap: 50px;
+}
+
+nav .navWeb li{
+    list-style: none;
+}
+
+nav .navWeb li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+nav .social{
+    display: flex;
+    gap: 50px;
+}
+
+nav .social li{
+    list-style: none;
+}
+
+nav .social li a{
+    color: black;
+}
+
+nav .navWeb li a:hover{
+    color: #333;
+}
+
+nav .social .facebook, .linkedin, .github{
+    transition: 0.3s ;
+}
+
+nav .social .facebook:hover{
+    color: #316FF6;
+}
+
+nav .social .linkedin:hover{
+    color: #0077b5;
+}
+
+nav .social .github:hover{
+    color: #333;
+}
+
+
+/*Hero section*/
+.container .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.container .hero .info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.container .hero .info p{
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.container .hero .info h1{
+    color: black;
+    font-size: 50px;
+}
+
+.container .hero img{
+    width: 409px;
+    height: 406px;
+    border-radius: 50%;
+}
+
+.container .hero button{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+
+/*About me section*/
+.about{
+    width: 100%;
+    margin-top: 150px;
+    /* background-color: #03045E; */
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+}
+
+.about h1{
+    font-size: 50px;
+    color: black;
+}
+
+.about p{
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+    color: black;
+    margin-top: 50px;
+    text-align: start;
+}
+
+
+/*Skills section*/
+.skills{
+    margin-top: 100px;
+    background-color: black;
+}
+
+.skills h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.skills .icons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.skills img{
+    width: 150px;
+    height: 150px;
+}
+
+
+/* Projects section */
+.projects{
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+.projects h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* AI Summarizer */
+.projects .summarizer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.projects .summarizer h1{
+    font-size: 30px;
+    text-align: start;
+}
+
+.projects .summarizer h1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.projects .summarizer p{
+    width: 700px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Tripp-web */
+.projects .trippy{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.projects .trippy h1{
+    font-size: 30px;
+    text-align: start;
+}
+
+.projects .trippy a{
+    color: black;
+    text-decoration: none;
+}
+
+.projects .trippy p{
+    width: 700px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Nexcent landing page */
+.projects .nexCent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.projects .nexCent h1{
+    font-size: 30px;
+    text-align: start;
+}
+
+.projects .nexCent h1 a{
+    color: black;
+    text-decoration: none;
+}
+
+.projects .nexCent p{
+    width: 700px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+.contact{
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.contact .info{
+    color: white;
+}
+
+.contact .info h1{
+    font-size: 35px;
+}
+
+.contact .info p{
+    font-size: 25px;
+}
+
+.contact .social-links ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact .social-links ul li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.contact .social-links ul li a{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.contact .social-links ul li:nth-child(1):hover{
+    background-color: #316FF6;
+}
+
+.contact .social-links ul li:nth-child(2):hover{
+    background-color: #0077b5;
+}
+.contact .social-links ul li:nth-child(3):hover{
+    background-color: #333;
+}
+
+
+
+
+/* -------------------------------------------------------------- */
+
+
+
+
+/*Mobile design*/
+@media screen and (max-width:576px) {
+    /* nav style */
+    nav{
+        height: 50px;
+        width: 100%;
+        background-color: #d1cfba;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+    }
+
+    nav .navWeb{
+        display: none;
+    }
+
+    nav .social{
+        display: none;
+    }
+
+    nav .icons{
+        display: block;
+        z-index: 9999;
+    }
+
+    nav .icons .times{
+        display: none;
+    }
+
+    nav h2{
+        font-size: 15px;
+    }
+
+    nav .icons li{
+        list-style: none;
+    }
+
+    nav .navMob{
+        width: 100%;
+        height: 100vh;
+        background-color: #d1cfba;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        transition: 0.3s all;
+    }
+
+    nav .navMob.active{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+
+    nav .navMob li{
+        list-style: none;
+    }
+
+    nav .navMob li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    nav .navMobIcons{
+        display: flex;
+        gap: 50px;
+    }
+
+    nav .navMobIcons li a{
+        font-size: 25px;
+    }
+
+    /*Hero section*/
+    .container .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .container .hero .info{
+        display: flex;
+        align-items: center;
+    }
+
+    .container .hero .info p{
+        color: black;
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .container .hero .info h1{
+        color: black;
+        font-size: 25px;
+    }
+
+    .container .hero img{
+        width: 206px;
+        height: 206px;
+        border-radius: 50%;
+    }
+
+    .container .hero button{
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        padding: 10px 30px;
+        border-radius: 6px;
+        margin-top: 15px;
+    }
+
+    /*About me section*/
+    .about{
+        width: 100%;
+        margin-top: 100px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about h1{
+        font-size: 30px;
+        color: black;
+    }
+
+    .about p{
+        width: 100%;
+        font-size: 18px;
+        line-height: 30px;
+        color: black;
+    }
+
+    .about img{
+        margin-top: 20px;
+        width: 300px;
+        height: 250px;
+    }
+
+    /*Skills section*/
+    .skills{
+        margin-top: 100px;
+        background-color: black;
+    }
+
+    .skills h1{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .skills .icons{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+
+    .skills img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Projects section */
+    .projects{
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    .projects h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    /* AI Summarizer */
+    .projects .summarizer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .projects .summarizer h1{
+        font-size: 30px;
+    }
+
+    .projects .summarizer h1 a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .projects .summarizer p{
+        max-width: 100%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .projects .summarizer img{
+        margin-top: 20px;
+    }
+
+    /* Tripp-web */
+    .projects .trippy{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    
+    .projects .trippy h1{
+        font-size: 30px;
+    }
+    
+    .projects .trippy a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    .projects .trippy p{
+        max-width: 100%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .projects .trippy img{
+        margin-top: 20px;
+    }
+
+    /* Nexcent landing page */
+    .projects .nexCent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .projects .nexCent h1{
+        font-size: 30px;
+    }
+
+    .projects .nexCent h1 a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .projects .nexCent p{
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .projects .nexCent img{
+        margin-top: 20px;
+    }
+
+    /* Footer */
+    .contact{
+        background-color: black;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .contact .info{
+        color: white;
+    }
+
+    .contact .info h1{
+        font-size: 25px;
+    }
+
+    .contact .info p{
+        font-size: 18px;
+    }
+
+    .contact .social-links ul{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact .social-links ul li{
+        list-style: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid white;
+        position: relative;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .contact .social-links ul li a{
+        color: white;
+        font-size: 22px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+}
+
+
+
+/* -------------------------------------------------------------- */
+
